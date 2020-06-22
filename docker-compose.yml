@@ -1,0 +1,28 @@
+version: '3'
+services:
+  urlshortner:
+    container_name: urlshortner
+    restart: always
+    build: .
+    ports:
+      - '5000:5000'
+    networks:
+      # - redis
+      - urlshortner-network
+  mongo:
+    # container_name: mongo
+    image: mongo
+    networks: 
+      - urlshortner-network
+networks: 
+  urlshortner-network:
+    driver: bridge
+  
+    # volumes:
+    #   - ./data:/data/db
+    # ports:
+    #   - '27017:27017'
+  # redis:
+  #   container_name: redis
+  #   image: 'redis'
+  #   command: ["redis-server", "--bind", "redis", "--port", "6379"]
