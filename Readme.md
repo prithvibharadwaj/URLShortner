@@ -1,4 +1,4 @@
-# Institutions
+# URL Shortner
 
 This package creates URL shortner server which id used to generate tiny url 
 URL analytics is added, so that we can know the number of clicks 
