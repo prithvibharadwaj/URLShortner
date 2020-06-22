@@ -16,9 +16,21 @@ Node: https://nodejs.org/en/download/package-manager/
 
 Run the follwing command in your terminal once the docker engine is started
 
+* Create a directory for the project and go the the folder
+```sh
+$ mkdir ProjectFolderName
+$ cd ProjectFolderName
+```
+*  Run the git clone command :
+```sh
+git clone https://github.com/prithvibharadwaj/URLShortner.git
+```
+* Run the docker compose command mentioned below to bring the service up 
+
 ```sh
 $ docker-compose up
 ```
+* Once the Service is up and running go to http://localhost:5000/ and start using the service 
 
 ## Jest Testing
 
