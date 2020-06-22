@@ -5,8 +5,11 @@ URL analytics is added, so that we can know the number of clicks
 
 ### Requirements
 
-Docker Engine to be running
-NodeJS 
+Docker Engine should be running and Node needs to be installed on the system you are running 
+
+https://docs.docker.com/desktop/
+
+Node: https://nodejs.org/en/download/package-manager/
 
 
 ### Installation
